@@ -1,0 +1,21 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#particles-js
+{
+  height: 100%;
+  background:#000000;
+  color: white;
+}
+#session
+{
+  background-color: red;
+  text-decoration-color: #177493;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 10px;
+}

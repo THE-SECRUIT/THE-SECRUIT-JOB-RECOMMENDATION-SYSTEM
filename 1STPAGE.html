@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carrier Recomendation</title>
+	<link rel="stylesheet" type="text/css" href="page.css">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<img src="images.jfif" width="30" height="30" alt="" style="border-radius: 45px;">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+	<a class="navbar-brand" href="particle.php" style="color: #d8ac29">SECRUIT</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="1STPAGE.html" style="color: #d8ac29">JobAssist</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pie.php" style="color: #d8ac29">Analysis</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="my_account.php" style="color: #d8ac29">My Profile</a>
+			</li>
+		</ul>
+</nav>
+	<h1 style="color:#d8ac29">Enter Valid Details</h1>
+   <div class="details">
+
+   	<form id="frm" action="subjects.php" method="POST">
+   		<label for="os">Operating System</label>
+   		<input type="text" name= "os" placeholder="Operating System">
+   		<label for="dsa">Data Structure</label>
+   		<input type="text" name= "dsa" placeholder="DSA">
+   		<label for="cpp">Basic Programming</label>
+   		<input type="text" name= "cpp" placeholder="OOP">
+   		<label for="se">Software Engineering</label>
+   		<input type="text" name= "se" placeholder="SE">
+   		<label for="cn">Computer Networks</label>
+   		<input type="text" name= "cn" placeholder="Computer Networks">
+   		<label for="ec">Electronics</label>
+   		<input type="text" name= "ec" placeholder="Electronics">
+   		<label for="coa">Computer Architecture</label>
+   		<input type="text" name= "coa" placeholder="Computer Architechture">
+   		<label for="math">Mathemetics</label>
+   		<input type="text" name= "math" placeholder="Mathematics">
+   		<label for="comskill">Communication Skills</label>
+   		<input type="text" name= "comskill" placeholder="Communication Skills">
+   		<label for="wh">Working Hours (suitable) </label>
+   		<input type="number" name= "wh"  min="1" max="15">
+   		<label for="lq">IQ (Logical Quotient Rating)</label>
+   		<input type="number" name= "lq" min="1" max="9">
+   		<br>
+   		<label for="hackathons">Coding Competitions Attained</label>
+   		<input type="number" name= "hackathons" >
+   		<label for="codingskills">Coding Skills Rating</label>
+   		<input type="number" name= "codingskills" min="1" max="9">
+   		<br><br>
+   		<label for="psp">Public Speaking Rating</label>
+   		<input type="number" name= "psp" min="1" max="9">
+   		<br><br>
+   		<label for="cwltbs">Overtime Working </label>
+   		<select id="cwltbs" name="cwltbs">
+   			<option value="Yes">Yes</option>
+   			<option value="No">No</option>
+   		</select>
+   		<label for="ecd">Extra-Courses Done </label>
+   		<select id="ecd" name="ecd">
+   			<option value="Yes">Yes</option>
+   			<option value="No">No</option>
+   		</select>
+
+   		<label for="workshops">Workshop Attained</label>
+   		<select id="wrokshops" name="workshops">
+   			<option value="option">Select option</option>
+   			<option value="data science">Data Science</option>
+   			<option value="web technology">Web Technology</option>
+   			<option value="game development">Game Development</option>
+   			<option value="system designing">System Designing</option>
+   			<option value="database security">Database Security</option>
+   			<option value="hacking">Hacking</option>
+   			<option value="testing">Testing</option>
+   			<option value="cloud computing">Cloud Computing</option>
+   			<option value="other"> Other</option>
+   		</select>
+   		<label for="tt">Talent Tests Participated </label>
+   		<select id="tt" name="tt">
+   			<option value="Yes">Yes</option>
+   			<option value="No">No</option>
+   		</select>
+   		<label for="olympiads">Olympiads Attempted </label>
+   		<select id="olympiads" name="olympiads">
+   			<option value="Yes">Yes</option>
+   			<option value="No">No</option>
+   		</select>
+   		<label for="rds">Reading & Writing Skills </label>
+   		<select id="rds" name="rds">
+   			<option value="excellent">Excellent</option>
+   			<option value="medium">Medium</option>
+   			<option value="poor">Poor</option>
+   		</select>
+   		<label for="mcs">Memory Capability Score</label>
+   		<select id="mcs" name="mcs">
+   			<option value="excellent">Excellent</option>
+   			<option value="medium">Medium</option>
+   			<option value="poor">Poor</option>
+   		</select>
+   		<label for="intsub">Interested Subjects</label>
+   		<select id="intsub" name="intsub">
+   			<option value="subject1">Select interested subject 1</option>
+   			<option value="cloud computing">Cloud Computing</option>
+   			<option value="networks">Networks</option>
+   			<option value="hacking">Hacking</option>
+   			<option value="computer Architecture">Computer Architecture</option>
+   			<option value="programming">Programming</option>
+   			<option value="parallel computing">Parallel Computing</option>
+   			<option value="iot">IOT</option>
+   			<option value="data engineering">Data Engineering</option>
+   			<option value="software engineering">Software Engineering</option>
+   			<option value="management">Management</option>
+   			<option value="compute">Compute</option>
+   		</select>
+   		<label for="intcar">Interested Carrier Area</label>
+   		<select id="intcar" name="intcar">
+   			<option value="intcar">Select Ingerested Carrier</option>
+   			<option value="system developer">System Developer</option>
+   			<option value="business">Business Process Analyst</option>
+   			<option value="Developer">Developer</option>
+   			<option value="testing">Testing</option>
+   			<option value="sceurity">Sceurity</option>
+   			<option value="Cloud">Cloud Computing</option>
+   			<option value="0">None</option>
+   		</select>
+   		<label for="jhs">Future Plan </label>
+   		<select id="jhs" name="jhs">
+   			<option value="job">Job</option>
+   			<option value="higher studies">Higher Studies</option>
+   		</select>
+   		<label for="com">Interested Type of Corporate Farm</label>
+   		<select id="com" name="com">
+   			<option value="com">Type of company</option>
+   			<option value="Web Services">Web Services</option>
+   			<option value="saas">SaaS Services</option>
+   			<option value="s&m">Sales&Marketing</option>
+   			<option value="t&m">Testing & Maintainance</option>
+   			<option value="development">Product Development</option>
+   			<option value="bpa">BPA</option>
+   			<option value="service">Service Based</option>
+   			<option value="product">Product Based</option>
+   			<option value="cloud">Cloud Service</option>
+   			<option value="finance">Finance</option>
+   			<option value="0">None</option>
+		</select>
+		<label for="seniors">Senior-Peer Interaction</label>
+   		<select id="seniors" name="seniors">
+   			<option value="yes">Yes</option>
+   			<option value="no">No</option>
+   		</select>
+   		<label for="games">Interested in Sports</label>
+   		<select id="games" name="games">
+   			<option value="yes">Yes</option>
+   			<option value="no">No</option>
+   		</select>
+   		<label for="books">Interested Genre of Books</label>
+   		<select id="books" name="books">
+   			<option value="health">Health</option>
+   			<option value="guide">Guide</option>
+   			<option value="self help">Self Help</option>
+   			<option value="horror">Horror</option>
+   			<option value="fantasy">Fantasy</option>
+   			<option value="autobiographies">Autobiographies</option>
+   			<option value="poetry">Poetry</option>
+   			<option value="anthology">Anthology</option>
+   			<option value="prayer book">Prayer Book</option>
+   			<option value="biographies">Biographies</option>
+   			<option value="science fiction">Science Fiction</option>
+   			<option value="comics">Comics</option>
+   			<option value="satire">Satire</option>
+   			<option value="art">Art</option>
+   			<option value="encyclopedias">Encyclopedias</option>
+   			<option value="history">History</option>
+   			<option value="mystery">Mystery</option>
+   			<option value="dictionaries">Dictionaries</option>
+   			<option value="diaries">Diaries</option>
+   			<option value="drama">Drama</option>
+   			<option value="children">Children</option>
+   			<option value="romance">Romance</option>
+   			<option value="journals">Journals</option>
+   			<option value="religion">Religions-Spirituality</option>
+   			<option value="cook">Cooking</option>
+   			<option value="action">Action & Adventure</option>
+   			<option value="travel">Travel</option>
+   			<option value="series">Series</option>
+   			<option value="science">Science</option>
+   			<option value="trilogy">Trilogy</option>
+   			<option value="math">Math</option>
+   		</select>
+   		<label for="expsal">Priority :</label>
+		<select id="expsal" name="expsal">
+			<option value="work">Work</option>
+			<option value="salary">Salary</option>
+		</select>
+		<label for="relation"> Relationship Status </label>
+		<select id="relation" name="relation">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+		<label for="behaviour">Behaviour </label>
+		<select id="behaviour" name="behaviour">
+			<option value="gentle">Gentle</option>
+			<option value="stubborn">Stubborn</option>
+		</select>
+		<label for="intfid">Interested Area of Work</label>
+		<select id="intfid" name="intfid">
+			<option value="technical">Technical</option>
+			<option value="management">Management</option>
+		</select>
+		<label for="sh">Type of Worker</label>
+		<select id="sh" name="sh">
+			<option value="smart">Smart Worker</option>
+			<option value="Hard">Hard Worker</option>
+		</select>
+		<label for="wit">Team Worker</label>
+		<select id="wit" name="wit">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+		</select>
+		<label for="job">Dream Job </label>
+   		<select id="job" name="job">
+   			<option value="Network Security Administrator">Network Security Administrator</option>
+   			<option value="Network Security Engineer">Network Security Engineer</option>
+   			<option value="Network Engineer">Network Engineer</option>
+   			<option value="Information Technology Manager">Information Technology Manager</option>
+   			<option value="Portal Administrator">Portal Administrator</option>
+   			<option value="Software Developer">Software Developer</option>
+   			<option value="Business System Analyst">Business System Analyst</option>
+   			<option value="CRM Business Analyst">CRM Business Analyst</option>
+   			<option value="Software Engineer">Software Engineer</option>
+   			<option value="Solution Architect">Solution Architect</option>
+   			<option value="Project Manager">Project Manager</option>
+   			<option value="UX Designer">UX Designer</option>
+   			<option value="CRM Technical Developer">CRM Technical Developer</option>
+   			<option value="Database Administrator">Database Administrator</option>
+   			<option value="Design & UX">Design & UX</option>
+   			<option value="Technical Services/Help Desk/Tech Support">Technical Services/Help Desk/Tech Support </option>
+   			<option value="Quality Assurance Associate">Quality Assurance Associate</option>
+   			<option value="Software System Engineer">Software System Engineer</option>
+   			<option value="System Analyst">System Analyst</option>
+   			<option value="System Security Administrator">System Security Administrator</option>
+   			<option value="Database Developer">Database Developer</option>
+   			<option value="Database Manager">Database Manager</option>
+   			<option value="Data Architect">Data Architect</option>
+   			<option value="Technical Support">Technical Support</option>
+   			<option value="Web Developer">Web Developer</option>
+   			<option value="Information Technology Auditor">Information Technology Auditor</option>
+   			<option value="Software Quality Assurance/Testing">Software Quality Assurance/Testing</option>
+   			<option value="Application Developer">Application Developer</option>
+   			<option value="Business Intelligence Analyst">Business Intelligence Analyst</option>
+   			<option value="E-commerce Analyst">E-commerce Analyst</option>
+   			<option value="Technical Engineer">Technical Engineer</option>
+   			<option value="Mobile Application Developer">Mobile Application Developer</option>
+   			<option value="Information Security Analyst">Information Security Analyst</option>
+   			<option value="Programmer Analyst">Programmer Analyst</option>
+   		</select>
+		   <button type="Submit" class="submit-btn">Submit</button>
+
+   	</form>
+
+   </div>
+</body>
+</html>
